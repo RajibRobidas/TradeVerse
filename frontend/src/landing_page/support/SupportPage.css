@@ -1,0 +1,35 @@
+.linka a {
+    text-decoration: none;
+    color: rgb(73, 58, 58);
+}
+
+.links a {
+    color: #5c76df;
+    line-height: 2rem;
+}
+
+.hero {
+    background-color: rgb(17, 121, 212);
+}
+
+.support-row {
+    color: white;
+}
+
+ol li {
+    text-decoration: underline;
+}
+
+.supportLinks a {
+    color: white;
+    line-height: 2rem;
+}
+
+.row2 input{
+    padding: 16px 40px;
+    width: 90%;
+    font-size: 25ox;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
