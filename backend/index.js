@@ -34,7 +34,7 @@ mongoose
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"], // allow both if you use both
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://tradeverse-dashboard-ezp0.onrender.com/", "https://tradeverse-frontend-gepg.onrender.com"], // allow both if you use both
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // Allow cookies
   })

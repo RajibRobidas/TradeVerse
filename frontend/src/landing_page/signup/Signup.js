@@ -32,7 +32,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        "http://localhost:3002/signup" || "https://tradeverse-vuyw.onrender.com/signup",
         {
           ...inputValue,
         },
@@ -42,7 +42,7 @@ const Signup = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          window.location.href = "http://localhost:3001" || "https://tradeverse0-dashboard.onrender.com";
         }, 1000);        
       } else {
         handleError(message);
