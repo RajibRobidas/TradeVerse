@@ -4,11 +4,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { VerticalGraph } from "./VerticalGraph";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings" || "https://tradeverse-vuyw.onrender.com/allHoldings").then((res) => {
+    axios.get(`${API_URL}/allHoldings`).then((res) => {
       setAllHoldings(res.data);
     });
   }, []);

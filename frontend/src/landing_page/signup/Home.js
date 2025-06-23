@@ -5,6 +5,8 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "./index2.css";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const Home = () => {
   const navigate = useNavigate();
   const [cookies, removeCookie] = useCookies([]);
@@ -15,7 +17,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:3002" || "https://tradeverse-vuyw.onrender.com",
+        API_URL,
         {},
         { withCredentials: true }
       );

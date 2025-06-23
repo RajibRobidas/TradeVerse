@@ -3,6 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
+const API_URL = process.env.REACT_APP_API_URL;
+const DASHBOARD_URL = process.env.REACT_APP_DASHBOARD_URL;
+
 const Login = () => {
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
@@ -31,7 +34,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login" || "https://tradeverse-vuyw.onrender.com/login",
+        `${API_URL}/login`,
         {
           ...inputValue,
         },
@@ -42,7 +45,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "http://localhost:3001" || "https://tradeverse0-dashboard.onrender.com";
+          window.location.href = DASHBOARD_URL;
         }, 1000);
       } else {
         handleError(message);

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+const FRONTEND_URL = process.env.REACT_APP_FRONTEND_URL;
+
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
@@ -19,7 +21,7 @@ const Menu = () => {
   const handleLogout = async () => {
     try {
       // Redirect to signup page on frontend 3000
-      window.location.href = "http://localhost:3000/signupHome";
+      window.location.href = `${FRONTEND_URL}/signupHome`;
     } catch (error) {
       console.error("Logout failed:", error);
       // Optionally show error toast

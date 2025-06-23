@@ -3,11 +3,13 @@ import React, { useState, useEffect } from "react";
 
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allPositions" || "https://tradeverse-vuyw.onrender.com/allPositions").then((res) => {
+    axios.get(`${API_URL}/allPositions`).then((res) => {
       setAllPositions(res.data);
     });
   }, []);
