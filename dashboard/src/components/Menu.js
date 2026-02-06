@@ -21,7 +21,7 @@ const Menu = () => {
   const handleLogout = async () => {
     try {
       // Redirect to signup page on frontend 3000
-      window.location.href = `${FRONTEND_URL}/signupHome`;
+      window.location.href = `${FRONTEND_URL}`;
     } catch (error) {
       console.error("Logout failed:", error);
       // Optionally show error toast
