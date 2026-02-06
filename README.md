@@ -5,7 +5,7 @@
 
 ### 🚀 Live Demo
 
-👉 [Visit Tradeverse](https://tradeverse-frontend.onrender.com/)
+👉 [Visit Tradeverse](https://tradeverse-frontend-gepg.onrender.com/)
 
 ---
 
