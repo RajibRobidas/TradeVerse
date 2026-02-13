@@ -7,7 +7,7 @@ function Navbar() {
       <div class="container p-2">
         <Link class="navbar-brand" to="/">
           <img
-            src="media/images/logo.svg"
+            src="media/images/tradeverse-removebg-preview-cropped.svg"
             alt="Logo"
             style={{ width: "25%" }}
           />
