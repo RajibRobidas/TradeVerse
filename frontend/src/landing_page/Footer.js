@@ -7,7 +7,7 @@ function Footer() {
         <div className="row pt-5 ">
           <div className="col">
             <img
-              src="media/images/logo.svg"
+              src="media/images/tradeverse-removebg-preview-cropped.svg"
               alt="Logo"
               className="mb-4"
               style={{ width: "50%" }}
